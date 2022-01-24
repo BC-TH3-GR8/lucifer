@@ -1,0 +1,16 @@
+<ion-grid>
+    <ion-col>
+        <ion-row>
+            <ion-card>
+                <ion-input type='text' [(ngModel)]='userId' placeholder='userId'></ion-input>
+                <ion-input type='text' [(ngModel)]='password' placeholder='password'></ion-input>
+                <ion-button (click)="signIn()">Sign In</ion-button>
+            </ion-card>
+        </ion-row>
+        <ion-row>
+            <ion-card>
+                <ion-button routerLink="../signUp" routerLinkActive="active">Sign Up</ion-button>
+            </ion-card>
+        </ion-row>
+    </ion-col>
+</ion-grid>

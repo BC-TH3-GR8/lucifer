@@ -1,0 +1,6 @@
+{
+	"appId": "koustavs.App",
+	"appName": "MyCapAppV1",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

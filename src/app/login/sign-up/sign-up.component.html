@@ -1,0 +1,20 @@
+<ion-grid>
+    <ion-col>
+        <ion-row>
+            <ion-card>
+                <ion-input type='text' [(ngModel)]='data.name' placeholder='Name'></ion-input>
+                <ion-input type='text' [(ngModel)]='data.userId' placeholder='userId'></ion-input>
+                <ion-input type='text' [(ngModel)]='data.password' placeholder='password'></ion-input>
+                <ion-input type='text' [(ngModel)]='temp' placeholder='confirm password'></ion-input>
+                <ion-input type='text' [(ngModel)]='data.email' placeholder='email'></ion-input>
+                <ion-button [disabled]="temp!==data.password" (click)="signUp()">Sign Up</ion-button>
+                <ion-card *ngIf="temp!==data.password">Password doesn't match</ion-card>
+            </ion-card>
+        </ion-row>
+        <ion-row>
+            <ion-card>
+                <ion-button routerLink="../signIn" routerLinkActive="active">Sign in</ion-button>
+            </ion-card>
+        </ion-row>
+    </ion-col>
+</ion-grid>

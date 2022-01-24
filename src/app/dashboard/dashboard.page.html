@@ -1,0 +1,11 @@
+<ion-content [fullscreen]="true">
+    <ion-header>dashboard</ion-header>
+    <ion-card>Welcome {{userDetails.name}}</ion-card>
+    <ion-card>
+        Here is your details
+        <ion-item>NAME: {{userDetails.name}}</ion-item>
+        <ion-item>UserId: {{userDetails.userId}}</ion-item>
+        <ion-item>Email: {{userDetails.email}}</ion-item>
+    </ion-card>
+    <ion-button (click)="logout()">Logout</ion-button>
+</ion-content>
